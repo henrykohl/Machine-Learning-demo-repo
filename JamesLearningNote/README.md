@@ -50,31 +50,6 @@
 
 ******************************************************************************************
 
-# 2.5
- 
-$\color{red} <font color="red">補充1(seaborn)</font>$
-
-sns.lmplot('sepal length (cm)','petal width (cm)',data=iris_data, fit_reg=False, hue='target')
-
-$\color{green} <font color="green">會產生錯誤(TypeError: lmplot() got multiple values for argument 'data')，需改成</font>$
-
-sns.lmplot(x='sepal length (cm)',y='petal width (cm)',data=iris_data, fit_reg=False, hue='target')
-
-$\color{red} <font color="red">補充2(plotly)</font>$
-
-plotly.offline.init_notebook_mode(connected=True)
-
-$\color{green} <font color="green">導致沒有輸出，需移除(移除之後需重啟Jupyter Notebook)</font>$
-
-$\color{red} <font color="red">補充3(plotly)</font>$
-
-import plotly.plotly as py
-
-$\color{green}<font color="green">會產生錯誤，需改成(先安裝chart-studio)</font>$
-
-!pip install chart-studio</br>
-import chart_studio.plotly as py
-
 # 3.2
 w += y*x
 
@@ -90,3 +65,5 @@ w = w + y*x
 [Linear Separator 線性分類器](https://hackmd.io/@rockmanray/SyqKYXXE_ )
 
 [Perceptron](https://www.youtube.com/watch?v=4Gac5I64LM4)
+
+[random-forest-regressor](https://tomohiroliu22.medium.com/a0f7a57c06c4)
