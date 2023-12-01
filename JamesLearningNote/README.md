@@ -1,3 +1,13 @@
+[1.1 Python懶人包 Anaconda 介紹＆安裝](https://medium.com/jameslearningnote/f8199fd4be8c)
+
+[1.2 Jupyter Notebook介紹](https://medium.com/jameslearningnote/705f023e3720)
+
+[1.3 Kaggle介紹](https://medium.com/jameslearningnote/705f023e3720)
+
+[1.4 資料科學領域的大神、網站](https://medium.com/jameslearningnote/ae9577df2c19)
+
+******************************************************************************************
+
 [2.1 如何獲取資料？ Sklearn內建資料集](https://medium.com/jameslearningnote/baa8f027ed7b) 
 
 [2.2 如何獲取資料？ Google Map API](https://medium.com/jameslearningnote/beb7c88dc4e3)
