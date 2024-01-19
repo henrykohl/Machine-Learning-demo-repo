@@ -12,5 +12,5 @@
 
 * [Lesson 6 - Exploratory Data Analysis - A Case Study](https://jovian.com/learn/data-analysis-with-python-zero-to-pandas/lesson/lesson-6-exploratory-data-analysis-a-case-study) [[Lecture Video](https://share.descript.com/view/P3YYeU57hGa)]
 
-* [Assignment 3 - Pandas Practice](https://jovian.com/learn/data-analysis-with-python-zero-to-pandas/assignment/assignment-3-pandas-practice) (4-a3)
+* [Assignment 3 - Pandas Practice](https://jovian.com/learn/data-analysis-with-python-zero-to-pandas/assignment/assignment-3-pandas-practice) (4-1-a3)
 * 
