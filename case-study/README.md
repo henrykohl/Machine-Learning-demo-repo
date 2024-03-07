@@ -7,3 +7,5 @@ grad01([Medium](https://medium.com/p/6f978fa65a80))：
 [pytorch的 .detach() 和.detach_() 的作用/區别(2)](http://nysdy.com/post/pytorch_detach_data/)
 
 pytorch-learning-rate([Medium](https://medium.com/p/6f978fa65a80))
+
+pytorch_lightning_tutorial([Mdeium](https://medium.com/p/6f978fa65a80))
