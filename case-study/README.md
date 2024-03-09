@@ -8,4 +8,6 @@ grad01([Medium](https://medium.com/p/6f978fa65a80))：
 
 pytorch-learning-rate([Medium](https://medium.com/p/6f978fa65a80))
 
-[pytorch_lightning_tutorial](https://www.youtube.com/watch?v=O7dNXpgdWbo)([Mdeium](https://medium.com/p/6f978fa65a80))
+[pytorch_lightning_tutorial(Youtube)](https://www.youtube.com/watch?v=O7dNXpgdWbo)([Mdeium](https://medium.com/p/6f978fa65a80))
+
+[lightning(Youtube)](https://www.youtube.com/watch?v=Hgg8Xy6IRig)([Medium](https://medium.com/p/6f978fa65a80))
