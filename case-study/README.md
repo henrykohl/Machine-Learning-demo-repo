@@ -1,4 +1,4 @@
-* [Positional_Encoding_in_Transformer_neural_networks(Youtube)](https://www.youtube.com/watch?v=ZMxVe-HK174)([Medium](https://medium.com/@u860218/6f978fa65a80))
+* [Positional_Encoding_in_Transformer_neural_networks(Youtube)](https://www.youtube.com/watch?v=ZMxVe-HK174)([Medium](https://medium.com/p/446b97ce91/))
 
 * grad01([Medium](https://medium.com/p/6f978fa65a80))：
 > Resource : 
