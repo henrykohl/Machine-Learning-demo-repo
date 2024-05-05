@@ -8,6 +8,8 @@
 >
 > [OpenWebText On Zenodo home](https://zenodo.org/records/3834942) (openwebtext.tar.xz)
 
+* `openwebtext.ipynb`以**Kaggle**建立(專用於**Kagggle**)，根據Lecture所示範的：下載`openwebtext.tar.xz`，整個解壓縮後，再進行處理的方式，產生`train_split.txt`與`val_split.txt`，但受限於**Kaggle**只有19.5GB的空間(Output)，此法無法在**Kaggle**完成整個檔案的解壓處理，但示範處理過程是正確的。
+
 * `training.py` 與 `chatbot.py` 大致複製 `gpt_v1.ipynb` 中 **Model Configuration** 的部分
 > 
 > * `training.py` 需要，但`chatbot.py` 不需要: `get_random_chunk(split)`、`get_batch(split)`、`estimate_loss()` 和 loop for training 與 model saving
