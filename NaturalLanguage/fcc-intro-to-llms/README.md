@@ -12,3 +12,6 @@
 > 
 > * `training.py` 需要，但`chatbot.py` 不需要: `get_random_chunk(split)`、`get_batch(split)`、`estimate_loss()` 和 loop for training 與 model saving
 > * `chatbot.py`  需要，但`training.py`不需要: model loading 和 text generation
+
+* `vocab.txt`來自原Lecture所提供([Github link](https://github.com/Infatoshi/fcc-intro-to-llms/blob/main/vocab.txt))，`openwebtext/vocab.txt`來自訂(Download/Load openwebtext dataset in gpt_v1.ipynb)方法處理所獲得。
+
