@@ -20,5 +20,7 @@
 
 * `vocab.txt`來自原Lecture所提供([Github link](https://github.com/Infatoshi/fcc-intro-to-llms/blob/main/vocab.txt))，`openwebtext/vocab.txt`來自訂(Download/Load openwebtext dataset in gpt_v1.ipynb)方法處理所獲得。
 
+* `data-extract-v2.py`與`gpt-v2.ipynb`只當作參考用，不用/沒有實際執行。 
+
 * 最後注意，此Lecture的Model Configuration是使用 <font color="red">**Pre-training**</font> 的方式，不是 <font color="red">**Fine-tuning**</font>的方式
 
