@@ -50,3 +50,15 @@
 >
 > `medical bot.pdf`
 
+### 14 | Generative AI: Everything You need to know about Gemini Pro LLM Models - 2024 [Video](https://www.youtube.com/watch?v=JrTZJMU0KK4)
+> [GEMINI](https://github.com/henrykohl/GEMINI)
+
+### 15 | End to End Gen AI Project using Google Gemini Pro | 2024 [Video](https://www.youtube.com/watch?v=7uR3JFYOa7s)
+> [SQLGEMINI] (https://github.com/henrykohl/SQLGEMINI)
+>
+> [text To SQL Generative AI](https://huggingface.co/spaces/henrykohl/textToSQLGenerativeAI)
+
+### 16 | Webinar - Generative AI Revolution : The Future | 2024 [Video](https://www.youtube.com/watch?v=PoKwTzmrAts)
+
+
+
