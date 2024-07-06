@@ -54,7 +54,7 @@
 > [GEMINI](https://github.com/henrykohl/GEMINI)
 
 ### 15 | End to End Gen AI Project using Google Gemini Pro | 2024 [Video](https://www.youtube.com/watch?v=7uR3JFYOa7s)
-> [SQLGEMINI] (https://github.com/henrykohl/SQLGEMINI)
+> [SQLGEMINI](https://github.com/henrykohl/SQLGEMINI)
 >
 > [text To SQL Generative AI](https://huggingface.co/spaces/henrykohl/textToSQLGenerativeAI)
 
