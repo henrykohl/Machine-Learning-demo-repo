@@ -116,17 +116,23 @@ About the open source models:[Open LLMs -- Github](https://github.com/eugeneyan/
 > 
 > Data：Wikipedia
 
+---
++-------------------------------------Architecture-------------------------------------+
+
 user----(question)---->|////Document////| (D)
 
 (D)----(graph search)---->|knowledge graph| (KG)
 > 1>
+
 2> (D)----(keyword search)---->|Docs of unstructure data| (UD)
 > 2>
+
 (D)----(vector search)---->|Docs of unstructure data| (UD)
 > 3>
 
 1>+2>+3> ---|combine source|--->|LLM|--->Response Context
 
++-------------------------------------------------------------------------------------------+
 
 ## Day 6: Powerful RAG Using Hybrid Search [Video](https://www.youtube.com/watch?v=6njA_tXdgww)
 > [Hybrid_Search_RAG.ipynb](https://github.com/henrykohl/Machine-Learning-demo-repo/blob/master/NaturalLanguage/genaiproj-ineuron/Hybrid_Search_RAG.ipynb)
