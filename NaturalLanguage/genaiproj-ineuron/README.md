@@ -81,12 +81,32 @@ About the open source models:[Open LLMs -- Github](https://github.com/eugeneyan/
 ## Day 3: Chatbot Implementation Using Telegram [Video]()
 > Github -- [Chatbot-Implementation-using-Telegram](https://github.com/henrykohl/Chatbot-Implementation-using-Telegram)
 
++-----------------------------Architecture-----------------------------+
+
+user ----(request)----> |Telgeram| (T) ----(request)----> |LLM| (L)
+
+user <----(response)---- |Telgeram| (T) <----(response)---- |LLM| (L)
+> (T) : Aiogram API
+>
+> (L) : GPT-3.5-Turbo
 
 ## Day 4: RAG Application Using OpenSource Framework [Video](https://www.youtube.com/watch?v=2lBPs2bb7sw)
 > [Simple_RAG_Demo.ipynb](https://github.com/henrykohl/Machine-Learning-demo-repo/blob/master/NaturalLanguage/genaiproj-ineuron/Simple_RAG_Demo.ipynb)
+>
 > [stats1.pdf](https://github.com/henrykohl/Machine-Learning-demo-repo/blob/master/NaturalLanguage/genaiproj-ineuron/stats1.pdf)
 >
 > [statsb.pdf](https://github.com/henrykohl/Machine-Learning-demo-repo/blob/master/NaturalLanguage/genaiproj-ineuron/statsb.pdf)
+
+
++------------------------RAG Architecture------------------------+
+
+|PDF| ----> |Extract Data| ----> |Chunking| ---->  |Embedding model| ----> |Vector Embedding| ----> |Vector DB|
+> |Vector DB| (knowledge base)
+
+user ----> |Vector DB| & user ----> |LLM|
+
+|Vector DB| ----(similar result)----> |LLM| ----(correct response)----> user 
+
 
 ## Day 5: Realtime Powerful RAG Pipeline using Neo4j and Langchain [Video](https://www.youtube.com/watch?v=XrQvCpjqsvo)
 > [Powerful_RAG_demo_with_Neo4j.ipynb](https://github.com/henrykohl/Machine-Learning-demo-repo/blob/master/NaturalLanguage/genaiproj-ineuron/Powerful_RAG_demo_with_Neo4j.ipynb)
@@ -182,11 +202,12 @@ Application - Open Source LLM
 > 架構 :
 > 
 > [ModelBuilder]->[Model Artifacts]->[AWS S3 Bucket]=>[AWS Sagemaker]<=[Model deploy]-->[AWS Sagemaker model End point] ( * )
+>	
 > ~ ~ ~ work flow ~ ~ ~
->
-> user  ---request---> ( * )
->
-> user <---response--- ( * )
+> >
+> > user  ---request---> ( * )
+> >
+> > user <---response--- ( * )
 
 Required two things / two credential 
 > AWS Access key
@@ -204,7 +225,7 @@ Required two things / two credential
 
 ---
 * 開始部署 application -- source:
-> [Medical-Disease-Analysis-using-GPT4-Vision](https://github.com/henrykohl/Medical-Disease-Analysis-using-GPT4-Vision)
+> Github -- [Medical-Disease-Analysis-using-GPT4-Vision](https://github.com/henrykohl/Medical-Disease-Analysis-using-GPT4-Vision)
 
 * 在 AWS 建立 EC2 instance
 > `Launch an instance`
