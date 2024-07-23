@@ -93,8 +93,52 @@ About the open source models:[Open LLMs -- Github](https://github.com/eugeneyan/
 >
 > [Copy_of_RAG_With_Knowledge_graph(Neo4j).ipynb](https://github.com/henrykohl/Machine-Learning-demo-repo/blob/master/NaturalLanguage/genaiproj-ineuron/Copy_of_RAG_With_Knowledge_graph(Neo4j).ipynb)
 
+
+* Tabular Database --> Structured Data . Schema
+> MYSQL
+
+* Unstructured Database --> Dict format . Key-value
+> MongoDB
+
+* Graph Database --> Tree . graph
+> Neo4j
+
+* 3 Query search -- Combine result -- Get (the accurate answer from your large langue model)
+
+* Libraries used to implement the particular system here:
+> Langchain (o) / LlamaIndex (x)
+>
+> Langchain community
+> 
+> OpenAI, OpenAI embedding, OpenAI LLM
+> 
+> Vector DB：Neo4j graph
+> 
+> Data：Wikipedia
+
+user----(question)---->|////Document////| (D)
+
+(D)----(graph search)---->|knowledge graph| (KG)
+> 1>
+2> (D)----(keyword search)---->|Docs of unstructure data| (UD)
+> 2>
+(D)----(vector search)---->|Docs of unstructure data| (UD)
+> 3>
+
+1>+2>+3> ---|combine source|--->|LLM|--->Response Context
+
+
 ## Day 6: Powerful RAG Using Hybrid Search [Video](https://www.youtube.com/watch?v=6njA_tXdgww)
 > [Hybrid_Search_RAG.ipynb](https://github.com/henrykohl/Machine-Learning-demo-repo/blob/master/NaturalLanguage/genaiproj-ineuron/Hybrid_Search_RAG.ipynb)
+
+
++-------------------------------------Hybrid Search RAG-------------------------------------+
+
+Weaviate - Vector DB - Cloud version
+
+LLM - HuggingFace
+
++-------------------------------------------------------------------------------------------+
 
 補充參考:
 [Langchain - Mistral 7B 模型實作](https://medium.com/@pang2258/55ce9eedb63a)
@@ -106,42 +150,55 @@ About the open source models:[Open LLMs -- Github](https://github.com/eugeneyan/
 [【LangChain】Prompts之Prompt templates](https://cloud.baidu.com/qianfandev/topic/267844)
 
 ## Day 7: Deployment of LLM Application [Video](https://www.youtube.com/watch?v=y4F139pLHGI)
-Generative AI
 
-|LLM|
-  ------> Commerical
-  ------> Open Source
+Generative AI：
+> |LLM| 包含
+> 
+>  ------> Commerical
+>
+>  ------> Open Source
 
--> OpenAI
--> AWS Bedrock
--> GCP Vertex
--> Azure openAI/LLMOps
+Cloud Providers:
+> -> OpenAI
+> 
+> -> AWS Bedrock
+> 
+> -> GCP Vertex
+> 
+> -> Azure openAI/LLMOps
+
+---
 
 Application - Open Source LLM
 
-**********Amazon sagemaker**********
+******** **Amazon sagemaker** ********
 
+> 架構 :
+> 
+> [ModelBuilder]->[Model Artifacts]->[AWS S3 Bucket]=>[AWS Sagemaker]<=[Model deploy]-->[AWS Sagemaker model End point] ( * )
+> ~ ~ ~ work flow ~ ~ ~
+>
+> user  ---request---> ( * )
+>
+> user <---response--- ( * )
 
-[ModelBuilder]->[Model Artifacts]->[AWS S3 Bucket]=>[AWS Sagemaker]<=[Model deploy]-->[AWS Sagemaker model End point](*)
+Required two things / two credential 
+> AWS Access key
+> 
+> AWS Secret access key
 
-
-
-user  ---request---> (*)
-user <---response--- (*)
-
-
-AWS Access key
-AWS Secret access key
 ---
+
 補充課程：
-[LLMOps End to End Project](https://www.youtube.com/playlist?list=PLmQAMKHKeLZ_77CBNeOoUyZUMzlqX-fpe)
-
-EC2 instance (可以用在 the next deployment process--the commercial model)
-
-[End to End DL project implementation](https://www.youtube.com/playlist?list=PLmQAMKHKeLZ_WWr8QBxKbMTE4tpwb4f1q) (Bappy 說 此標題 不太正確)
+> [LLMOps End to End Project](https://www.youtube.com/playlist?list=PLmQAMKHKeLZ_77CBNeOoUyZUMzlqX-fpe)
+>
+> * EC2 instance (可以用在 the next deployment process--the commercial model)
+>
+> [End to End DL project implementation](https://www.youtube.com/playlist?list=PLmQAMKHKeLZ_WWr8QBxKbMTE4tpwb4f1q) (Bappy 說 此標題 不太正確)
 
 ---
-[Medical-Disease-Analysis-using-GPT4-Vision](https://github.com/henrykohl/Medical-Disease-Analysis-using-GPT4-Vision)
+* 開始部署 application -- source:
+> [Medical-Disease-Analysis-using-GPT4-Vision](https://github.com/henrykohl/Medical-Disease-Analysis-using-GPT4-Vision)
 
 * 在 AWS 建立 EC2 instance
 > `Launch an instance`
@@ -223,22 +280,24 @@ EC2 instance (可以用在 the next deployment process--the commercial model)
 ---
 
 進階參考--使用CICD
-[Streamlit-APP-Deploy-AWS-CICD](https://github.com/entbappy/Streamlit-APP-Deploy-AWS-CICD)
-
-[Omdena](https://www.omdena.com/) --Building AI Solutions
+> [Streamlit-APP-Deploy-AWS-CICD](https://github.com/entbappy/Streamlit-APP-Deploy-AWS-CICD)
+>
+> [Omdena](https://www.omdena.com/) --Building AI Solutions
 
 ---
 Inference 模式
+> user ---> [LLM]
+>
+> user <--- [LLM]
 
-user ---> [LLM]
-user <--- [LLM]
-
-RAG 模式
-[custom data](1)---連接--->[knowledge base](2)<---連接---[LLM](3)
-
-
-user ---> (2) ---> (3) 
-user      <---     (3) 
+RAG 模式:
+> [custom data] (1)---連接--->[knowledge base] (2)<---連接---[LLM] (3)
+> 
+> ~ ~ ~ work flow ~ ~ ~
+>
+> user ---> (2) ---> (3) 
+> 
+> user      <---     (3) 
 ---
 補充:
 [Comparing 10+ LLMOps Tools](https://research.aimultiple.com/llmops-tools/)
