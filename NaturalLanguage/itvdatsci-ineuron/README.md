@@ -614,3 +614,28 @@ discriminative cases (classification)
 
 (inferencing -- prediction)
 > prompt --> |Model| --> generate
+
+## Day 8 Resume Building Data science [Video](https://www.youtube.com/watch?v=HN2jlmVq8_I)
+
+* GENAI
+> 1. NLP (Encoder & Decoder)
+>
+> 2. Attention
+>
+> 3. Transformer (Self Attention) (Encoder & Decoder)
+> 
+> 4. BERT (Encoder)
+> 
+> 5. GPT (Decoder)
+
+* Language task
+> 1. text classification
+> 
+> 2. text summarization
+>
+> 3. text generation
+>
+> 4. Question/Answer/Chatbot
+
+* Langchain / Llama-index
+> API / Finetuning / RAG
